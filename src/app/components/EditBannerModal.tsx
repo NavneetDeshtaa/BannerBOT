@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import styles from './EditBannerModal.module.css';
+import Image from 'next/image';
+
 
 interface EditBannerModalProps {
   open: boolean;
@@ -46,10 +48,10 @@ const EditBannerModal: React.FC<EditBannerModalProps> = ({ open, handleClose, ba
           &times;
         </div>
         <p className={styles.titleEdit}>Edit Banner</p>
-        <img src={newBanner.image} alt="Preview" className={styles.preview} />
+        <Image src={newBanner.image} alt="Preview" className={styles.preview} />
         <div className={styles.images}>
           {imageOptions.map((img, index) => (
-            <img
+            <Image
               key={index}
               src={img}
               alt={`Option ${index + 1}`}
