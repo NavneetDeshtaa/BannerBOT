@@ -1,0 +1,115 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.open {
+  display: block;
+}
+
+.titleEdit{
+  font-size:20px;
+  font-weight:500;
+}
+
+.modalContent {
+  background-color: #ffffff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+}
+
+.preview {
+  width: 400px;
+  height:200px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.imageOption {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  object-fit: cover;
+  border: 2px solid transparent;
+}
+
+.imageOption.selected {
+  border: 2px solid #0070f3;
+}
+
+.inputGroup {
+  margin-bottom: 16px;
+  text-align: left; 
+}
+
+.inputGroup label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px; 
+}
+
+.modalContent input[type="text"] {
+  display: block;
+  width:100%;
+  height:33px;
+  padding: 2px 4px;
+  border: 1px solid #ccc;
+  border-radius:6px;
+}
+
+.modalContent button {
+  width: 100%;
+  height:40px;
+  border: none;
+  border-radius:20px;
+  font-size:18px;
+  cursor: pointer;
+  background-color: #08635a;
+  color: white;
+}
+
+.modalContent button:hover {
+  background-color: #04413b;
+}
+
+.download {
+  display: block;
+  margin-top: 16px;
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.closeButton {
+  position: absolute;
+  top:0px;
+  right:30px;
+  background: transparent;
+  border: none;
+  font-size:40px;
+  cursor: pointer;
+  color: #000000;
+  z-index: 2;
+}
+
+

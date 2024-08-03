@@ -1,0 +1,64 @@
+.card {
+  position: relative;
+  border-radius:4px;
+  overflow: hidden;
+  margin: 38px 0;
+  height: 300px;
+  width: 100%;
+  max-width: 500px; 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.editButton {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 2; 
+}
+
+.editButton:hover {
+  color: #c2e3da;
+}
+
+.content {
+  color: white;
+  z-index: 2;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+  margin-top:40px;
+  gap: 10px;
+}
+
+.title {
+  margin: 0 0 8px;
+  font-size:30px;
+}
+
+.description {
+  margin: 0 0 16px;
+}
+
+.cta {
+  background-color: rgb(255, 255, 16);
+  color: black;
+  padding: 8px 10px;
+  border: none;
+  border-radius:1px;
+  cursor: pointer;
+}
+
+.cta:hover {
+  background-color: rgb(204, 204, 11);
+}
